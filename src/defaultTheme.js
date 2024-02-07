@@ -10,23 +10,23 @@ export const defaultTheme = createTheme({
     },
   },
   typography: {
-    fontFamily: 'Apercu,"Source Sans Pro",system,system-ui,',
+    fontFamily: ['"Segoe UI"', "Roboto"].join(","),
     h1: {
-      fontSize: "44px",
+      fontSize: "42px",
       fontWeight: 700,
       lineHeight: "64px",
       "@media (max-width:600px)": {
-        fontSize: "30px",
+        fontSize: "28px",
       },
     },
     h3: {
-      fontSize: "30px",
+      fontSize: "28px",
     },
     h4: {
-      fontSize: "22px",
+      fontSize: "20px",
     },
     body1: {
-      fontSize: "16px",
+      fontSize: "14px",
       lineHeight: "28px",
     },
     allVariants: {

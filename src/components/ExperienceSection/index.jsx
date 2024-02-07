@@ -4,7 +4,7 @@ export default function ExperienceSection() {
   const data = [
     {
       id: 1,
-      imageUrl: "./ps.png",
+      imageUrl: "./experience/ps.png",
       name: "Publicis Sapient",
       desc: [
         "Worked on React.JS, Next.JS for developing the full fledge user and admin portal for client PTT public company limited Thailand",
@@ -17,7 +17,7 @@ export default function ExperienceSection() {
     },
     {
       id: 2,
-      imageUrl: "./output-onlinepngtools.png",
+      imageUrl: "./experience/ivlabs.png",
       name: "IvLabs",
       desc: [
         "Implemented various algorithm which separated out the foreground object from background, can be used for detecting the moving object.",

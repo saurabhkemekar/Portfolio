@@ -4,31 +4,31 @@ import ProjectCard from "./ProjectCard";
 export default function ProjectSection() {
   const projectData = [
     {
-      name: "Air Quality Management System",
+      name: "Semantic Segmentation",
       description:
-        "Developed a system that helps to find the temperature and concentration of gases in the room. Built a mobile application using MIT Inventor and used firebase to send the reading of the sensor to the application.",
-      imageUrl: "../../asset/profile.jpeg",
+        "The project's goal is to use the Unet architecture to classify each pixel in an image according to its category. The Camvid dataset was used for the training and inference of the model.",
+      imageUrl: "./project/seg_img.png",
       link: "https://github.com/theViz343/Air_quality_management_system",
-      techStack: ["C++", "ESP32", "Firebase", "MIT Inventor"],
-      date: "2018",
+      techStack: ["Python", "Tensorflow"],
+      date: "2021",
     },
     {
       name: "Air Quality Management System",
       description:
         "Developed a system that helps to find the temperature and concentration of gases in the room. Built a mobile application using MIT Inventor and used firebase to send the reading of the sensor to the application.",
-      imageUrl: "../../asset/profile.jpeg",
+      imageUrl: "./project/image-mosaicing.png",
       link: "https://github.com/theViz343/Air_quality_management_system",
       techStack: ["C++", "ESP32", "Firebase", "MIT Inventor"],
       date: "2018",
     },
     {
-      name: "Air Quality Management System",
+      name: "Image Mosaicing",
       description:
-        "Developed a system that helps to find the temperature and concentration of gases in the room. Built a mobile application using MIT Inventor and used firebase to send the reading of the sensor to the application.",
-      imageUrl: "../../asset/profile.jpeg",
+        "Generate 360-degree panorama of 5000 Images. The SIFT technique was used to find the features in the image. Using the bit masking concept, eliminate artifacts that appeared while stitching 2 images",
+      imageUrl: "./project/air-quality.jpg",
       link: "https://github.com/theViz343/Air_quality_management_system",
-      techStack: ["C++", "ESP32", "Firebase", "MIT Inventor"],
-      date: "2018",
+      techStack: ["Python", "OpenCV", "Numpy", "Matplotlib"],
+      date: "2020",
     },
   ];
   return (

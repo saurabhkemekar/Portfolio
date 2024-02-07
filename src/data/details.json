@@ -32,6 +32,11 @@
         "iconUrl": "https://img.icons8.com/color/48/css3.png"
       },
       {
+        "name": "typeScript",
+        "label": "TypeScript",
+        "iconUrl": "https://img.icons8.com/fluency/48/typescript--v1.png"
+      },
+      {
         "name": "redux",
         "label": "Redux",
         "iconUrl": "https://img.icons8.com/color/48/redux.png"
@@ -49,12 +54,7 @@
       {
         "name": "postgreSQL",
         "label": "PostgreSQL",
-        "iconUrl": "https://img.icons8.com/color/48/redux.png"
-      },
-      {
-        "name": "docker",
-        "label": "Docker",
-        "iconUrl": "https://img.icons8.com/color/48/redux.png"
+        "iconUrl": "https://img.icons8.com/color/48/postgreesql.png"
       },
       {
         "name": "material-ui",
@@ -64,7 +64,7 @@
       {
         "name": "docker",
         "label": "Docker",
-        "iconUrl": "https://img.icons8.com/color/48/redux.png"
+        "iconUrl": "https://img.icons8.com/fluency/48/docker.png"
       }
     ]
   }

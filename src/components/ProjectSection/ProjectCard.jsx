@@ -39,7 +39,7 @@ export default function ProjectCard({ data }) {
               }}
             >
               <img
-                src={require("../../asset/seg_img.png")}
+                src={data.imageUrl}
                 alt="project-image"
                 style={{
                   maxWidth: "250px",
@@ -65,7 +65,7 @@ export default function ProjectCard({ data }) {
             <Box sx={{ marginTop: "15px" }}>
               <TechStackClip isTechStack={false}>{data.date}</TechStackClip>
             </Box>
-            <Typography sx={{ fontSize: "16px", marginTop: "10px" }}>
+            <Typography variant="body1" sx={{ marginTop: "10px" }}>
               {data.description}
             </Typography>
             <Box
