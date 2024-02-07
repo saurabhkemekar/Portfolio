@@ -16,7 +16,7 @@ export default function ProjectSection() {
       name: "Air Quality Management System",
       description:
         "Developed a system that helps to find the temperature and concentration of gases in the room. Built a mobile application using MIT Inventor and used firebase to send the reading of the sensor to the application.",
-      imageUrl: "./project/image-mosaicing.png",
+      imageUrl: "./project/air-quality.jpg",
       link: "https://github.com/theViz343/Air_quality_management_system",
       techStack: ["C++", "ESP32", "Firebase", "MIT Inventor"],
       date: "2018",
@@ -25,7 +25,8 @@ export default function ProjectSection() {
       name: "Image Mosaicing",
       description:
         "Generate 360-degree panorama of 5000 Images. The SIFT technique was used to find the features in the image. Using the bit masking concept, eliminate artifacts that appeared while stitching 2 images",
-      imageUrl: "./project/air-quality.jpg",
+
+      imageUrl: "./project/image-mosaicing.png",
       link: "https://github.com/theViz343/Air_quality_management_system",
       techStack: ["Python", "OpenCV", "Numpy", "Matplotlib"],
       date: "2020",
