@@ -1,0 +1,38 @@
+.landing-section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10%;
+}
+
+.profile-img {
+  border-radius: 50%;
+  max-width: 450px;
+  box-shadow: #edf7fa -10px 10px;
+  border: 0;
+}
+
+.name-section {
+  /* max-width: 700px; */
+}
+.section {
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (max-width: 600px) {
+  .landing-section {
+    margin-top: 10px;
+  }
+  .section {
+    flex-direction: column-reverse;
+  }
+  .profile-img {
+    max-width: 300px;
+  }
+  .name-section {
+    max-width: fit-content;
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "resume": {
+    "techStack": [
+      {
+        "name": "javascript",
+        "label": "JavaScript",
+        "iconUrl": "https://img.icons8.com/fluency/48/javascript.png"
+      },
+      {
+        "name": "java",
+        "label": "Java",
+        "iconUrl": "https://img.icons8.com/color/48/java-coffee-cup-logo--v1.png"
+      },
+      {
+        "name": "react.js",
+        "label": "React.js",
+        "iconUrl": "https://img.icons8.com/plasticine/100/react.png"
+      },
+      {
+        "name": "spring-boot",
+        "label": "Spring Boot",
+        "iconUrl": "https://img.icons8.com/color/48/spring-logo.png"
+      },
+      {
+        "name": "html",
+        "label": "HTML",
+        "iconUrl": "https://img.icons8.com/color/48/html-5--v1.png"
+      },
+      {
+        "name": "css",
+        "label": "CSS",
+        "iconUrl": "https://img.icons8.com/color/48/css3.png"
+      },
+      {
+        "name": "redux",
+        "label": "Redux",
+        "iconUrl": "https://img.icons8.com/color/48/redux.png"
+      },
+      {
+        "name": "next-js",
+        "label": "Next.js",
+        "iconUrl": "./nextjs.svg"
+      },
+      {
+        "name": "jest",
+        "label": "Jest",
+        "iconUrl": "https://img.icons8.com/external-tal-revivo-filled-tal-revivo/24/external-jest-can-collect-code-coverage-information-from-entire-projects-logo-filled-tal-revivo.png"
+      },
+      {
+        "name": "postgreSQL",
+        "label": "PostgreSQL",
+        "iconUrl": "https://img.icons8.com/color/48/redux.png"
+      },
+      {
+        "name": "docker",
+        "label": "Docker",
+        "iconUrl": "https://img.icons8.com/color/48/redux.png"
+      },
+      {
+        "name": "material-ui",
+        "label": "Material UI",
+        "iconUrl": "./material-ui.svg"
+      },
+      {
+        "name": "docker",
+        "label": "Docker",
+        "iconUrl": "https://img.icons8.com/color/48/redux.png"
+      }
+    ]
+  }
+}
