@@ -24,12 +24,14 @@ export default function ProjectCard({ data }) {
       }}
     >
       <Grid container sx={{ display: "flex", justifyContent: "center" }}>
-        <Grid item sm={6} md={3}>
+        <Grid item sm={6} md={4}>
           <Box
             sx={{
               padding: "20px 30px",
               backgroundColor: "#f9fafb",
               borderRight: "1px solid #e5e7eb",
+              display: "flex",
+              justifyContent: "center",
             }}
           >
             <Box
@@ -50,7 +52,7 @@ export default function ProjectCard({ data }) {
             </Box>
           </Box>
         </Grid>
-        <Grid item sm={6} md={7}>
+        <Grid item sm={6} md={8}>
           <Box sx={{ padding: "20px 30px" }}>
             <Box sx={{ display: "flex", gap: "10px", alignContent: "center" }}>
               <Typography

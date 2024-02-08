@@ -1,18 +1,28 @@
-import { Box, Button, Typography } from "@mui/material";
+import {
+  Box,
+  Button,
+  IconButton,
+  Tooltip,
+  Typography,
+  useMediaQuery,
+} from "@mui/material";
 import "./main.css";
 import Header from "./Header";
 import ProjectSection from "./ProjectSection";
 import SkillSection from "./SkillSection";
 import { styled } from "@mui/material/styles";
 import ExperienceSection from "./ExperienceSection";
+import ContentCopyIcon from "@mui/icons-material/ContentCopy";
+import { useState } from "react";
+import InfoSection from "./InfoSection";
 
-const SectionBox = styled(Box)(() => ({
+const SectionBox = styled(Box)(({ isMobile }) => ({
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
   justifyContent: "center",
   marginBottom: "20px",
-  padding: "0 10%",
+  padding: isMobile ? "0 0%" : "0 10%",
 }));
 const SectionHeading = styled(Typography)(() => ({
   backgroundColor: "#E5E7EB",
@@ -23,83 +33,36 @@ const SectionHeading = styled(Typography)(() => ({
   textAlign: "center",
 }));
 export default function Main() {
+  const [isCopied, setIsCopied] = useState(false);
+  const isMobile = useMediaQuery("(max-width:800px)");
+  const copyEmailToClipborad = () => {
+    navigator.clipboard.writeText("saurabhkemekar786@gmail.com");
+    setIsCopied(true);
+    setTimeout(() => {
+      setIsCopied(false);
+    }, 2000);
+  };
+  console.log(isMobile);
   return (
     <Box>
       {/* <Header /> */}
-      <SectionBox height={"100vh"}>
-        <Box className="section">
-          <Box className="name-section">
-            <Box>
-              <Typography variant="h1" sx={{ color: "#21243D" }}>
-                Hi, I am Saurabh
-                <img
-                  width="48"
-                  height="48"
-                  src="https://img.icons8.com/color/48/so-so.png"
-                  alt="so-so"
-                />
-                <br />
-                Software Engineer
-              </Typography>
-            </Box>
-            <Box sx={{ paddingTop: "5%" }}>
-              <Typography variant="body1" sx={{ color: "#21243D" }}>
-                I am a final year undergraduate student pursuing my B.Tech
-                degree in Electronics and Communication Engineering. My interest
-                lies in the field of Machine Learning. Besides research in my
-                free time, I like to play Computer games and Cricket.
-              </Typography>
-            </Box>
-            <Box sx={{ paddingTop: "5%", display: "flex", gap: "10px" }}>
-              <a href="https://github.com/saurabhkemekar">
-                <img
-                  width="30"
-                  height="30"
-                  src="https://img.icons8.com/ios-glyphs/30/github.png"
-                  alt="github"
-                />
-              </a>
-              <a
-                href={"https://www.linkedin.com/in/saurabh-kemekar-a8589710b/"}
-              >
-                <img
-                  width="30"
-                  height="30"
-                  src="https://img.icons8.com/ios-glyphs/30/linkedin.png"
-                  alt="linkedin"
-                />
-              </a>
-              <a href="https://www.instagram.com/saurabhkemekar/">
-                <img
-                  width="30"
-                  height="30"
-                  src="https://img.icons8.com/ios-glyphs/30/instagram-new.png"
-                  alt="instagram-new"
-                />
-              </a>
-            </Box>
-            {/* <Button
-              variant="contained"
-              sx={{ color: "#fff", fontWeight: 600, boxShadow: "none" }}
-            >
-              Download Resume
-            </Button> */}
-          </Box>
-          <Box>
-            <img src="./profile-pic-2.png" className="profile-img" />
-          </Box>
-        </Box>
+      <SectionBox height={"100vh"} isMobile={isMobile}>
+        <InfoSection />
       </SectionBox>
-      <SectionBox sx={{ backgroundColor: "#f9fafb", padding: "15px 0px" }}>
+      <SectionBox
+        sx={{ backgroundColor: "#f9fafb", padding: "15px 0px" }}
+        isMobile={isMobile}
+      >
         <SectionHeading>Skills</SectionHeading>
         <SkillSection />
       </SectionBox>
-      <SectionBox sx={{ marginTop: "50px" }}>
+      <SectionBox sx={{ marginTop: "50px" }} isMobile={isMobile}>
         <SectionHeading>Experience</SectionHeading>
         <ExperienceSection />
       </SectionBox>
 
       <SectionBox
+        isMobile={isMobile}
         sx={{
           marginTop: "50px",
         }}
@@ -108,10 +71,12 @@ export default function Main() {
         <ProjectSection />
       </SectionBox>
       <SectionBox
+        isMobile={isMobile}
         sx={{
           marginTop: "20px",
           padding: "50px 0",
           backgroundColor: "#f9fafb",
+          marginBottom: "0",
         }}
       >
         <Box sx={{ display: "flex", alignItems: "center", gap: "5px" }}>
@@ -128,12 +93,22 @@ export default function Main() {
               saurabhkemekar786@gmail.com
             </Typography>
           </a>
-          <img
-            width="24"
-            height="24"
-            src="https://img.icons8.com/material-outlined/24/copy.png"
-            alt="copy"
-          />
+
+          <Tooltip
+            title="Copied"
+            disableFocusListener
+            disableHoverListener
+            disableTouchListener
+            open={isCopied}
+            onClose={() => setIsCopied(false)}
+            PopperProps={{
+              disablePortal: true,
+            }}
+          >
+            <IconButton aria-label="delete" onClick={copyEmailToClipborad}>
+              <ContentCopyIcon fontSize="16px" color="common.black" />
+            </IconButton>
+          </Tooltip>
         </Box>
       </SectionBox>
     </Box>
