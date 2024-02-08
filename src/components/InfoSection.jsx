@@ -20,10 +20,11 @@ export default function InfoSection() {
         </Box>
         <Box sx={{ paddingTop: "5%" }}>
           <Typography variant="body1" sx={{ color: "#21243D" }}>
-            I am a final year undergraduate student pursuing my B.Tech degree in
-            Electronics and Communication Engineering. My interest lies in the
-            field of Machine Learning. Besides research in my free time, I like
-            to play Computer games and Cricket.
+            I have 1.5 years of experience as a full-stack developer, with focus
+            on creating exceptional software that are fast and responsive. I am
+            passionate about bringing digital products to life by seamlessly
+            integrating technical and visual elements. When I'm not at computer,
+            I love playing cricket and watching Netflix shows.
           </Typography>
         </Box>
         <Box sx={{ paddingTop: "5%", display: "flex", gap: "10px" }}>
