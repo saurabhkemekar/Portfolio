@@ -54,7 +54,7 @@ export default function InfoSection() {
           </a>
         </Box>
         <a
-          href="./cv/resume.pdf"
+          href="https://drive.google.com/file/d/1cNEbNPXOhdpc7IiSOFg9KSzM2BPAO1GB/view?usp=sharing"
           target="_blank"
           style={{ textDecoration: "none" }}
         >

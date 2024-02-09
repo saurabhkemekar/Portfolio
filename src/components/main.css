@@ -33,3 +33,9 @@
     max-width: fit-content;
   }
 }
+
+@media only screen and (min-width: 600px) and (max-width: 800px) {
+  .profile-img {
+    max-width: 350px;
+  }
+}
