@@ -3,13 +3,13 @@ import { styled } from "@mui/material/styles";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 const TechStackClip = styled(Box)(({ isTechStack, theme }) => ({
   border: "1px solid",
-  borderColor: isTechStack ? theme.palette.primary.main : "#142850",
+  borderColor: theme.palette.primary.main,
   padding: isTechStack ? "2px 4px" : "2px 10px",
   borderRadius: isTechStack ? "5px" : "10px",
-  color: isTechStack ? theme.palette.primary.main : "#fff",
+  color: theme.palette.primary.main,
   fontWeight: 500,
   fontSize: isTechStack ? "13.5px" : "18px",
-  backgroundColor: isTechStack ? "#fff" : "#142850",
+  backgroundColor: "transparent",
   maxWidth: "max-content",
 }));
 export default function ProjectCard({ data }) {

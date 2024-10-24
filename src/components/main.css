@@ -15,16 +15,19 @@
 
 .section {
   display: flex;
-  gap: 100px;
+  gap: 10px;
   justify-content: center;
   align-items: center;
+}
+.name-section {
+  min-width: 60%;
 }
 @media only screen and (max-width: 600px) {
   .landing-section {
     margin-top: 10px;
   }
   .section {
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
   .profile-img {
     max-width: 300px;

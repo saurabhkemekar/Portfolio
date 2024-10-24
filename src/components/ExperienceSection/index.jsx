@@ -31,19 +31,18 @@ export default function ExperienceSection() {
     <Box>
       {data.map((item) => {
         return (
-          <Grid
-            container
+          <Box
+            // container
             sx={{
               marginTop: "10px",
               boxShadow: "0px 3px rgba(99, 99, 99, 0.2)",
             }}
           >
-            <Grid item sm={6} md={4}>
+            {/* <Grid item sm={6} md={4}>
               <Box
                 sx={{
                   display: "flex",
                   justifyContent: "center",
-                  backgroundColor: "#f9fafb",
                   height: "100%",
                 }}
               >
@@ -57,7 +56,7 @@ export default function ExperienceSection() {
                   }}
                 />
               </Box>
-            </Grid>
+            </Grid> */}
             <Grid item sm={6} md={8}>
               <Box sx={{ padding: "20px 30px" }}>
                 <Box
@@ -70,7 +69,7 @@ export default function ExperienceSection() {
                     <Typography
                       sx={{
                         fontSize: "30px",
-                        color: "#21243D",
+                        color: "#text.primary",
                         fontWeight: 700,
                       }}
                     >
@@ -95,7 +94,7 @@ export default function ExperienceSection() {
                 </Box>
               </Box>
             </Grid>
-          </Grid>
+          </Box>
         );
       })}
     </Box>

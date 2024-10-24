@@ -1,57 +1,49 @@
-import { Box, Button, IconButton, Tooltip, Typography } from "@mui/material";
+import { Box, IconButton, Typography } from "@mui/material";
 import "./main.css";
-
+import Lottie from "react-lottie";
+import * as animationData from "../asset/animations/animation.json";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import GitHubIcon from "@mui/icons-material/GitHub";
 export default function InfoSection() {
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: animationData,
+  };
+
   return (
     <Box className="section">
       <Box className="name-section">
         <Box>
-          <Typography variant="h1" sx={{ color: "#21243D" }}>
-            Hi, I am Saurabh
-            <img
-              width="48"
-              height="48"
-              src="https://img.icons8.com/color/48/so-so.png"
-              alt="so-so"
-            />
-            <br />
-            Software Engineer
+          <Typography variant="h3" color="text.primary">
+            Hi there!,
           </Typography>
-        </Box>
-        <Box sx={{ paddingTop: "5%" }}>
-          <Typography variant="body1" sx={{ color: "#21243D" }}>
-            I have 1.5 years of experience as a full-stack developer, with focus
-            on creating exceptional software that are fast and responsive. I am
-            passionate about bringing digital products to life by seamlessly
-            integrating technical and visual elements. When I'm not at computer,
-            I love playing cricket and watching Netflix shows.
+          <Typography variant="h1">
+            I'm <span className="blueText">Saurabh,</span>
+          </Typography>
+          <Typography variant="h2">
+            A <span className="pinkText">FullStack</span> Engineer
           </Typography>
         </Box>
         <Box sx={{ paddingTop: "5%", display: "flex", gap: "10px" }}>
-          <a href="https://github.com/saurabhkemekar">
-            <img
-              width="30"
-              height="30"
-              src="https://img.icons8.com/ios-glyphs/30/github.png"
-              alt="github"
-            />
-          </a>
-          <a href={"https://www.linkedin.com/in/saurabh-kemekar-a8589710b/"}>
-            <img
-              width="30"
-              height="30"
-              src="https://img.icons8.com/ios-glyphs/30/linkedin.png"
-              alt="linkedin"
-            />
-          </a>
-          <a href="https://www.instagram.com/saurabhkemekar/">
-            <img
-              width="30"
-              height="30"
-              src="https://img.icons8.com/ios-glyphs/30/instagram-new.png"
-              alt="instagram-new"
-            />
-          </a>
+          <IconButton
+            onClick={() => {
+              window.open("https://github.com/saurabhkemekar", "_blank");
+            }}
+          >
+            <GitHubIcon />
+          </IconButton>
+
+          <IconButton
+            onClick={() => {
+              window.open(
+                "https://www.linkedin.com/in/saurabh-kemekar-a8589710b/",
+                "_blank"
+              );
+            }}
+          >
+            <LinkedInIcon />
+          </IconButton>
         </Box>
         <a
           href="https://drive.google.com/file/d/1cNEbNPXOhdpc7IiSOFg9KSzM2BPAO1GB/view?usp=sharing"
@@ -74,7 +66,7 @@ export default function InfoSection() {
         </a>
       </Box>
       <Box>
-        <img src="./profile-pic-2.png" className="profile-img" />
+        <Lottie options={defaultOptions} />
       </Box>
     </Box>
   );
