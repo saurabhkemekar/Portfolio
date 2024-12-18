@@ -46,22 +46,24 @@ export default function InfoSection() {
           </IconButton>
         </Box>
         <a
-          href="https://drive.google.com/file/d/1cNEbNPXOhdpc7IiSOFg9KSzM2BPAO1GB/view?usp=sharing"
+          href="https://drive.google.com/file/d/1vSj_2wGU35a6xcYfier7r1Ba4HJKwLuB/view?usp=drive_link"
           target="_blank"
           style={{ textDecoration: "none" }}
         >
           <Typography
             sx={{
-              backgroundColor: "primary.main",
+              backgroundColor: "transparent",
               color: "#fff",
               maxWidth: "fit-content",
               fontWeight: 600,
-              padding: "3px 5px",
+              padding: "5px 20px",
               borderRadius: "5px",
               textDecoration: "none",
+              border:"1px solid #5f98dd",
+              marginTop:"10px"
             }}
           >
-            Download Resume
+             Resume
           </Typography>
         </a>
       </Box>

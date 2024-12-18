@@ -28,8 +28,6 @@ export default function ProjectCard({ data }) {
           <Box
             sx={{
               padding: "20px 30px",
-              backgroundColor: "#f9fafb",
-              borderRight: "1px solid #e5e7eb",
               display: "flex",
               justifyContent: "center",
             }}
@@ -56,7 +54,7 @@ export default function ProjectCard({ data }) {
           <Box sx={{ padding: "20px 30px" }}>
             <Box sx={{ display: "flex", gap: "10px", alignContent: "center" }}>
               <Typography
-                sx={{ fontSize: "30px", color: "#21243D", fontWeight: 700 }}
+                sx={{ fontSize: "30px", color: "#fff", fontWeight: 700 }}
               >
                 {data.name}
               </Typography>

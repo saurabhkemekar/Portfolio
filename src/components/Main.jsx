@@ -49,13 +49,13 @@ export default function Main() {
   console.log(isMobile);
   return (
     <Box backgroundColor="primary">
-      <IconButton onClick={toggleTheme}>
+      {/* <IconButton onClick={toggleTheme}>
         {mode === "light" ? (
           <LightModeIcon color={grey[900]} />
         ) : (
           <DarkModeIcon />
         )}
-      </IconButton>
+      </IconButton> */}
       <SectionBox height={"100vh"} isMobile={isMobile}>
         <InfoSection />
       </SectionBox>
@@ -85,36 +85,18 @@ export default function Main() {
           marginBottom: "0",
         }}
       >
-        <Box sx={{ display: "flex", alignItems: "center", gap: "5px" }}>
-          <Typography sx={{ fontSize: "20px" }}> Get in touch</Typography>
-          <img src="./hand.svg" width="24px" />
-          <a href="mailto:saurabhkemekar786@gmail.com">
+        <Box sx={{ display: "flex", alignItems: "center", gap: "5px", cursor:"pointer" }}>
+          <a href="mailto:saurabhkemekar786@gmail.com" style={{all:"unset"}}>
             <Typography
               sx={{
                 fontSize: "20px",
-                textDecoration: "underline",
-                textDecorationColor: "blue",
+                border:"1px solid #5f98dd",
+                padding:"10px 20px"
               }}
             >
-              saurabhkemekar786@gmail.com
+              Get in touch
             </Typography>
           </a>
-
-          <Tooltip
-            title="Copied"
-            disableFocusListener
-            disableHoverListener
-            disableTouchListener
-            open={isCopied}
-            onClose={() => setIsCopied(false)}
-            PopperProps={{
-              disablePortal: true,
-            }}
-          >
-            <IconButton aria-label="delete" onClick={copyEmailToClipborad}>
-              <ContentCopyIcon fontSize="16px" color="common.black" />
-            </IconButton>
-          </Tooltip>
         </Box>
       </SectionBox>
     </Box>
