@@ -14,7 +14,7 @@ const theme = {
     dark: {
       palette: {
         primary: {
-          main: "#000000",
+          main: "red",
           light: "#ffffff",
         },
         text: {
@@ -25,31 +25,35 @@ const theme = {
   },
 
   typography: {
-    fontFamily: ['"Segoe UI"', "Roboto"].join(","),
+    fontFamily: ["Sora"].join(","),
     h1: {
-      fontSize: "42px",
+      fontSize: "3.2rem",
       fontWeight: 700,
       lineHeight: "64px",
       "@media (max-width:600px)": {
-        fontSize: "28px",
+        fontSize: "2.1rem",
       },
     },
     h2: {
-      fontSize: "38px",
+      fontSize: "2.5rem",
       fontWeight: 400,
       "@media (max-width:600px)": {
-        fontSize: "24px",
+        fontSize: "2rem",
       },
     },
     h3: {
-      fontSize: "28px",
+      fontSize: "2rem",
     },
     h4: {
-      fontSize: "20px",
+      fontSize: "1.74rem",
+      fontWeight: 800,
     },
     body1: {
-      fontSize: "14px",
+      fontSize: "1.25rem",
       lineHeight: "28px",
+    },
+    p: {
+      fontSize: "1rem",
     },
   },
 };

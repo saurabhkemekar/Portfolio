@@ -1,5 +1,6 @@
 import { Box } from "@mui/material";
-import ProjectCard from "./ProjectCard";
+import ProjectCard from "./Card/ProjectCard";
+import SectionHeading from "../atoms/Heading/SectionHeading";
 
 export default function ProjectSection() {
   const projectData = [
@@ -34,8 +35,9 @@ export default function ProjectSection() {
   ];
   return (
     <Box marginTop={"3%"}>
+      <SectionHeading index={'04.'} name="What I've Built"/>
       {projectData.map((data, indx) => (
-        <ProjectCard data={data} />
+        <ProjectCard data={data} key={indx} />
       ))}
     </Box>
   );

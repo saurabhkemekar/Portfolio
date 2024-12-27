@@ -1,0 +1,55 @@
+p {
+  margin: 0;
+}
+.experience-container {
+  display: flex;
+  gap: 32px;
+  margin-top: 2rem;
+  align-items: flex-start;
+}
+.time {
+  min-width: 250px;
+}
+.date-text {
+  font-family: monospace;
+  font-size: 15px;
+}
+
+.posititon-text {
+  font-size: 22px;
+  font-weight: 500;
+}
+.workplace-header {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 24px;
+}
+.work-text {
+  color: #e1ff00;
+}
+
+.info {
+  font-size: 15px;
+  font-weight: 400;
+}
+.info::before {
+  content: "";
+  background-image: url("../../asset/icons/chevron-right.svg");
+  width: 24px;
+  height: 24px;
+}
+.list-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+.list-icon {
+  min-width: 24px !important;
+  min-height: 24px !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .experience-container {
+    display: block;
+  }
+}

@@ -1,0 +1,41 @@
+.contact-container {
+  background-color: #1b1b1b;
+  width: 100%;
+}
+
+.card {
+  padding: 10% 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-button {
+  color: #e1ff00;
+  border: 1px solid #e1ff00;
+  background-color: transparent;
+  padding: 10px 30px;
+  max-width: fit-content;
+  cursor: pointer;
+}
+.contact-button:hover {
+  background-color: #e1ff00;
+  color: black;
+}
+
+.text {
+  font-size: 13px;
+  font-family: monospace;
+  padding: 30px 10%;
+}
+
+@media only screen and (max-width: 600px) {
+  .card {
+    padding: 10% 5%;
+  }
+}
+/* 
+#171717
+#1b1b1b
+*/

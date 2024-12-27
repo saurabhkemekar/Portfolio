@@ -1,0 +1,22 @@
+.heading-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.section-name {
+  color: #eeeeee;
+  font-weight: 700;
+}
+
+.section-index {
+  color: #e1ff00;
+}
+
+.divider {
+  min-width: 50px;
+  max-width: 400px;
+  flex: 1;
+  height: 1px;
+  background-color: #b4b4b4;
+}

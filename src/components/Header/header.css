@@ -1,0 +1,159 @@
+.container {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  margin-right: 50px;
+}
+
+.header-section-item {
+  all: unset;
+  cursor: pointer;
+  display: flex;
+  gap: 8px;
+  opacity: 0;
+  animation-name: fadeInDown;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+.container .header-section-item:nth-child(1) {
+  animation-delay: calc(0s);
+}
+
+.container .header-section-item:nth-child(2) {
+  animation-delay: calc(0.3s);
+}
+
+.container .header-section-item:nth-child(3) {
+  animation-delay: calc(0.6s);
+}
+
+.container .header-section-item:nth-child(4) {
+  animation-delay: calc(0.9s);
+}
+
+.mobile-container {
+  position: absolute;
+  right: -10px;
+  height: 100%;
+  z-index: 20;
+}
+
+.side-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #000;
+  flex: 1;
+  width: 300px;
+  height: 100%;
+  animation-name: slideIn;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+}
+
+.hamburger-menu {
+  position: absolute;
+  right: 10px;
+  z-index: 100;
+}
+
+.mobile-section-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  gap: 50px;
+  align-items: center;
+  height: 100%;
+}
+
+.resume-button {
+  background-color: transparent;
+  color: #fff;
+  max-width: fit-content;
+  font-weight: 600;
+  padding: 5px 30px;
+  border-radius: 2px;
+  text-decoration: none;
+  border: 1px solid #e1ff00;
+}
+
+.resume-button:hover {
+  color: #000;
+  background-color: #e1ff00;
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(1000px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+/* hamburger Menu animation */
+.menu {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  padding: 0;
+}
+
+.line {
+  fill: none;
+  stroke: #e1ff00;
+  stroke-width: 6;
+  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+    stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line1 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+
+.line2 {
+  stroke-dasharray: 60 60;
+  stroke-width: 6;
+}
+
+.line3 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+
+.opened .line1 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}
+
+.opened .line2 {
+  stroke-dasharray: 1 60;
+  stroke-dashoffset: -30;
+  stroke-width: 6;
+}
+
+.opened .line3 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}
